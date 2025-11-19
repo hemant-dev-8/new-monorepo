@@ -1,0 +1,17 @@
+{
+  "name": "minimal-monorepo",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "turbo": "^1.9.0"
+  },
+  "scripts": {
+    "start:dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "clean": "turbo run clean"
+  }
+}

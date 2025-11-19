@@ -1,0 +1,8 @@
+node_modules/*
+apps/*/.turbo/*
+apps/*/node_modules/*
+packages/*/.turbo
+
+# Ignore top-level turbo cache folder
+.turbo/
+.turbo
